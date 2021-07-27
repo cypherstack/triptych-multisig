@@ -1,0 +1,44 @@
+@InProceedings{triptych,
+author="Noether, Sarang
+and Goodell, Brandon",
+editor="Garcia-Alfaro, Joaquin
+and Navarro-Arribas, Guillermo
+and Herrera-Joancomarti, Jordi",
+title="Triptych: Logarithmic-Sized Linkable Ring Signatures with Applications",
+booktitle="Data Privacy Management, Cryptocurrencies and Blockchain Technology",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="337--354",
+abstract="Ring signatures are a common construction used to provide signer ambiguity among a non-interactive set of public keys specified at the time of signing. Unlike early approaches where signature size is linear in the size of the signer anonymity set, current optimal solutions either require centralized trusted setups or produce signatures logarithmic in size. However, few also provide linkability, a property used to determine whether the signer of a message has signed any previous message, possibly with restrictions on the anonymity set choice. Here we introduce Triptych, a family of linkable ring signatures without trusted setup that is based on generalizations of zero-knowledge proofs of knowledge of commitment openings to zero. We demonstrate applications of Triptych in signer-ambiguous transaction protocols by extending the construction to openings of parallel commitments in independent anonymity sets. Signatures are logarithmic in the anonymity set size and, while verification complexity is linear, collections of proofs can be efficiently verified in batches. We show that for anonymity set sizes practical for use in distributed protocols, Triptych offers competitive performance with a straightforward construction.",
+isbn="978-3-030-66172-4"
+}
+
+@inproceedings{gennaro,
+author = {Gennaro, Rosario and Goldfeder, Steven},
+title = {Fast Multiparty Threshold {ECDSA} with Fast Trustless Setup},
+year = {2018},
+isbn = {9781450356930},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3243734.3243859},
+doi = {10.1145/3243734.3243859},
+abstract = {A threshold signature scheme enables distributed signing among n players such that any subgroup of size $t+1$ can sign, whereas any group with t or fewer players cannot. While there exist previous threshold schemes for the ECDSA signature scheme, we are the first protocol that supports multiparty signatures for any $t \l{}eq n$ with an efficient dealerless key generation. Our protocol is faster than previous solutions and significantly reduces the communication complexity as well. We prove our scheme secure against malicious adversaries with a dishonest majority. We implemented our protocol, demonstrating its efficiency and suitability to be deployed in practice.},
+booktitle = {Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {1179–1194},
+numpages = {16},
+keywords = {multiparty computation, digital signatures, cryptpgraphy, bitcoin, threshold signatures},
+location = {Toronto, Canada},
+series = {CCS '18}
+}
+
+@article{musig,
+  title={Simple {S}chnorr multi-signatures with applications to {B}itcoin},
+  author={Maxwell, Gregory and Poelstra, Andrew and Seurin, Yannick and Wuille, Pieter},
+  journal={Designs, Codes and Cryptography},
+  volume={87},
+  number={9},
+  pages={2139--2164},
+  year={2019},
+  publisher={Springer}
+}
