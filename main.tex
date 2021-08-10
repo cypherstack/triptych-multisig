@@ -96,7 +96,7 @@ The result will be that all players obtain $J$ without revealing their private s
 
 Because $p$ consists of an additive prefix $\hs(2,aR)$ that is not distributed between players, we define players' secret shares $\{p_\alpha\}_{\alpha=0}^{\nu-1}$ of $p$ according to their index:
 \begin{itemize}
-    \item $p_0 := \hs(2,aR) + \hs(1, \{B_\beta\}_{\beta=0}^{\nu-1}, 1) b_1$
+    \item $p_0 := \hs(2,aR) + \hs(1, \{B_\beta\}_{\beta=0}^{\nu-1}, 0) b_0$
     \item $p_{\alpha > 0} := \hs(1, \{B_\beta\}_{\beta=0}^{\nu-1}, \alpha) b_\alpha$
 \end{itemize}
 The result is that $\sum_{\alpha=0}^{\nu-1} p_\alpha = p$.
