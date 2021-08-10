@@ -110,8 +110,8 @@ Let $\enc_\alpha$ represent Paillier encryption using the public key $\Gamma_\al
 The process proceeds as follows.
 \begin{enumerate}
     \item Each player $\alpha$ chooses random $g_\alpha \in \F$ and sets $G_\alpha \equiv g_\alpha U$.
-    It generates a commitment $C_{\operatorname{tag},\alpha}$ to $G_i$ and sends the commitment to all players.
-    \item Each player $\alpha$ sets $c_\alpha \equiv \enc_\alpha(p_i)$. It sends $c_\alpha$ to all players.
+    It generates a commitment $C_{\operatorname{tag},\alpha}$ to $G_\alpha$ and sends the commitment to all players.
+    \item Each player $\alpha$ sets $c_\alpha \equiv \enc_\alpha(p_\alpha)$. It sends $c_\alpha$ to all players.
     \item For each other player $\beta$, player $\alpha$ chooses random $b_{\alpha\beta} \in \F$.
     It sends the value $\gamma_\alpha c_\beta + \enc_\beta(-b_{\alpha\beta})$ to player $\beta$, who decrypts using $\gamma_\beta$ and defines $a_{\beta\alpha}$ to be the resulting plaintext.
     \item Each player $\alpha$ computes $\delta_\alpha := p_\alpha \gamma_\alpha + \sum_{\beta \neq \alpha}(a_{\alpha\beta} + b_{\alpha\beta})$.
